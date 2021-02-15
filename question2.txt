@@ -1,0 +1,18 @@
+1. get data from api based on user input which will be city name
+2. display the local time of that place
+3. change the theme according to the local time(morning, afternoon and night)
+4. display the weather details
+5. display some effect on screen based on the weather.
+
+snow - 2 only snow effect based on time of day(1 day and 1 night)
+sleet - 2 only snow effect based on time of day(1 day and 1 night)
+hail - 2 only snow effect based on time of day(1 day and 1 night)
+
+thunder - only thunder effect
+
+heavy rain - time + heavy rain
+light rain - time + light rain
+showers - time+ very light rain
+heavy cloud - time + clouds heavy
+light cloud - time + clouds normal
+clear - time + clouds very light

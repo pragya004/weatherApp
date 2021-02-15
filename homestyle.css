@@ -1,0 +1,228 @@
+#hello{
+    overflow: hidden;
+
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    width:100%;
+    height:100vh;
+    /* night */
+    /* background-color:rgb(14, 13, 13); */
+    /* evening */
+    /* background: linear-gradient(180deg, #1b5972 0%, rgba(145, 95, 20, 0.527) 100%);; */
+    /* morning */
+    /* background: linear-gradient(180deg, #38B0DE 0%, rgba(56, 176, 222, 0.23) 100%); */
+    background: linear-gradient(to right top, #38B0DE,  rgba(56, 176, 222, 0.23));
+}
+
+#cloud{
+    visibility: hidden;
+    position : absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background: url(cloud.png);
+    animation : animate 100s linear infinite;
+    z-index: 7;
+}
+
+@keyframes animate{
+    0%{
+        background-position:0px;
+    }
+    100%{
+        background-position: 5440px;
+    }
+}
+
+#snowfall{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100vh;
+    visibility: hidden;
+}
+
+
+/* Container - Sky*/
+#sky {
+	width: 100vw;
+	height: 100vh;
+}
+
+
+
+/* Sun  */
+#theSun {
+    
+	opacity: 1;
+	box-shadow: 0px 0px 15px 3px rgb(211, 211, 3);
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 5%;
+	right: 13%;
+	animation: sunpulse 2s alternate infinite;
+	border-radius: 50%;
+	background-image: radial-gradient(circle, #ecc203 95%, #eb8c19);
+}
+
+@keyframes sunpulse {
+	from {
+		box-shadow: 0 0 100px rgb(199, 199, 4), 0 0 100px rgb(187, 187, 4);
+	}
+	to {
+		box-shadow: 0 0 25px rgb(211, 211, 5), 0 0 75px rgb(201, 201, 1);
+	}
+}
+
+#appArea{
+    overflow: hidden;
+    height:80vh;
+    width:70%;
+    background: linear-gradient(to right bottom, rgba(255,2555,255, 0.7)
+    ,rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    z-index : 10;
+    backdrop-filter : blur(1rem);
+    display: flex;
+}
+#main1{
+    position:absolute;
+    top:0;
+    left:0;
+    min-height: 100vh;
+    min-width: 100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#left-side{
+    flex:1;
+    background: linear-gradient(to right bottom, rgba(255,2555,255, 0.7)
+    ,rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    
+}
+
+.cardParent{
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    margin: 5px;
+    width:100%;
+    height:15%;
+    border-radius: 3rem;
+    align-items: center;
+    background: linear-gradient(to right bottom, rgba(255,2555,255, 0.7)
+    ,rgba(255,255,255,0.3));
+    display:flex;
+    justify-content: space-between;
+}
+.card p,.card div, .card img{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    padding:5px 25px 5px 25px;
+    font-size: 14px;
+
+}
+#placeName{
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    border-radius: 3rem;
+    height:20px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+#temp{
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#joke{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+    /* display: none; */
+}
+#joke>h2{
+    margin:50px 20px 50px 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+#joke>p{
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    border-radius: 3rem;
+    height:20px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+#content{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;  
+    display:none;  
+}
+#right-side{
+    flex:1;
+    font-family: 'Quicksand', sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top:50px;
+}
+#searchField{
+    background:white;
+    height:40px;
+    width:80%;   
+    border-radius: 3rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#search{
+    width:80%;
+    height:36px;
+    border-radius: 3rem;
+    border:none;
+    /* padding:5px 20px 5px 20px; */
+}
+#search:focus{
+    outline:none;
+}
+#submitButton{
+    height:25px;
+    width:25px;
+    
+}
+#right-side>h1{
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom:65%;
+    width:70%;
+}
+#cardParentright{
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:70px;
+    display:none;
+}
+#righth1{
+    display: block;
+}
